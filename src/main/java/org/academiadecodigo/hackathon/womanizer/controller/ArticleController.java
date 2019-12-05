@@ -42,4 +42,14 @@ public class ArticleController {
         return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = "/{id}")
+    public ResponseEntity<?> getArticle(@PathVariable Integer id) {
+        Article article = articleService.get(id);
+
+        if(article == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(article, HttpStatus.OK);
+    }
 }

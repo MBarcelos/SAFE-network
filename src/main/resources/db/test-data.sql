@@ -8,7 +8,7 @@ VALUES (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.4
         In 2018, 28 women in Portugal were killed through domestic violence.<br>
         Activists and experts point out that domestic violence abusers are given lenient judgements and have called for an end to victim-blaming and what they call sexist court rulings.
         <br>
-        In 2017, a Portuguese man who attacked his wife was not sent to prison because the judge deemed - citing the Old Testament - that his reaction was somewhat reasonable because she had committed adultery.'<br>,
+        In 2017, a Portuguese man who attacked his wife was not sent to prison because the judge deemed - citing the Old Testament - that his reaction was somewhat reasonable because she had committed adultery.<br>',
         'img1.jpg'),
        (2, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
         'Portugal: Over 500 women murdered in the last 15 years, 28 in 2019',
@@ -21,7 +21,7 @@ VALUES (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.4
         Most femicides were recorded in women aged between 36 and 50 years old(43%), followed by above 65 (21%), and half of the victims had jobs.<br>
         This data leads UMAR to argue for an increase in protection of these women and the creation of specific structures to cope with elderly women, especially in areas farther away from large urban centres.<br>
         The highest number of murders (seven) was in January, followed by February, August and October, with three deaths each, and no homicide was recorded in November.<br>
-        Most women (13) were killed using a firearm, but there were also eight cases of women being stabbed, three being beaten, three being strangled or one killed by asphyxiation.'<br>,
+        Most women (13) were killed using a firearm, but there were also eight cases of women being stabbed, three being beaten, three being strangled or one killed by asphyxiation.<br>',
         'img1.jpg'),
        (3, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
         'Two arrests for domestic violence every day as Portugal approaches first “day of mourning”',
@@ -32,13 +32,13 @@ VALUES (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.4
         She told reporters ahead of yesterday''s Council of Ministers, “this day is a day in which we should not just remember the victims but show support to their families and collectively renew our sense of purpose towards addressing this fight”, which Lusa news agency explains is a fight that the new minister feels everyone in society should support.<br>
         “The more aware society is that (domestic violence) is a crime, the more likely we will be to eliminate it”, said Mariana Vieira da Silva.<br>
         Ironically, the day the March 7 date was announced, RTP claims four arrests were made for domestic violence, bringing the total number of arrests so far to 126.<br>
-        Most of the suspects facing charges are men, and in some cases they have not just been arrested for attacking or threatening partners or former partners, but for menacing their own children.'<br>,
+        Most of the suspects facing charges are men, and in some cases they have not just been arrested for attacking or threatening partners or former partners, but for menacing their own children.<br>',
         'img1.jpg'),
        (4, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
-        'Portugal: Over 500 women murdered in the last 15 years, 28 in 2019'<br>,
+        'Portugal: Over 500 women murdered in the last 15 years, 28 in 2019<br>',
         'In its first report on the implementation of the Council of Europe Convention on preventing and combating violence against women and domestic violence (“Istanbul Convention”) by Portugal, the Group of Experts on Action against Violence against Women and Domestic Violence (GREVIO) acknowledges the significant commitment of the Portuguese authorities and the progress achieved. However, the report also points out a number of shortcomings and recommends measures to improve the protection of victims, the prosecution of offenders, as well as prevention measures.<br>
         Following the ratification by Portugal of the convention in 2013, the scope of public policies was widened and other forms of violence against women such ask stalking, female genital mutilation (FGM) and forced marriage were criminalised. GREVIO welcomes the efforts in the area of FGM that resulted in three consecutive programmes of action specifically targeting this form of violence, which makes Portugal a pioneer in the area. GREVIO calls on Portugal to develop long-term programmes addressing all forms of violence covered by the convention and to build on progress already achieved.<br>
-        GREVIO praises the role the national co-ordination body (CIG) to ensure implementation, monitoring and evaluation of gender-equality policies and gender-based violence. Nevertheless, it finds that the implementation of national action plans on violence against women would benefit from a more robust co-ordination between the governmental agencies. At the operational level, the impact of Law No.112/2009 on domestic violence could be improved, in particular by means of a greater involvement of local authorities.'<br>,
+        GREVIO praises the role the national co-ordination body (CIG) to ensure implementation, monitoring and evaluation of gender-equality policies and gender-based violence. Nevertheless, it finds that the implementation of national action plans on violence against women would benefit from a more robust co-ordination between the governmental agencies. At the operational level, the impact of Law No.112/2009 on domestic violence could be improved, in particular by means of a greater involvement of local authorities.<br>',
         'img1.jpg'),
        (5, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
         'Silent march against domestic violence',
