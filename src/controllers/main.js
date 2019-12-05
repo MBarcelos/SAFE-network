@@ -1,7 +1,10 @@
-import mediaController from './media-controller.js';
 import homeController from './home-controller.js';
+import articleController from './article-controller.js';
+import videoController from './video-controller.js';
+
 
 export default {
     homeController,
-    mediaController
+    articleController,
+    videoController
 };

@@ -17,7 +17,7 @@ function unloadController(url) {
 
 function start() {
     window.onhashchange = window.onhashchange || function(event) {
-        if (event.newUrl !== event.oldURL) {
+        if (event.newURL !== event.oldURL) {
             unloadController(event.oldURL);
         }
 

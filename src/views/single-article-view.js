@@ -1,5 +1,6 @@
 function start(arrArticle) {
     renderArticle(arrArticle);
+
 }
 
 function clear() {
@@ -8,7 +9,6 @@ function clear() {
 
 function renderArticle(arr) {
     /* eslint-disable no-param-reassign */
-    let html = '';
 
     for (let i = 1; i <= 3; i++) {
         html += `<div class="cell small-4"><h2>${arr[i].title}</h2>`;
@@ -16,8 +16,8 @@ function renderArticle(arr) {
     }
 
     $('#article-body').append(html);
-}
 
+}
 
 export default {
     start,

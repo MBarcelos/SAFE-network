@@ -1,17 +1,14 @@
 /* eslint-disable no-console */
-import homeView from '../views/home-view.js';
+import singleArticleView from '../views/single-article-view.js';
 import articleService from '../services/article-service.js';
-
 
 export default {
     async start() {
-        
         const articles = await articleService.getArticle();
-        homeView.start(articles);
-
+        articleView.start(articles);
     },
-    hash: 'home',
+    hash: 'articles',
     unload() {
-        homeView.clear();
+        articleView.clear();
     }
 };
