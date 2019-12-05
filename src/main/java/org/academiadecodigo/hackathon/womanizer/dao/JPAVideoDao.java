@@ -1,6 +1,6 @@
 package org.academiadecodigo.hackathon.womanizer.dao;
 
-import org.academiadecodigo.hackathon.womanizer.model.Article;
+import org.academiadecodigo.hackathon.womanizer.model.Video;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -10,7 +10,7 @@ import javax.persistence.criteria.Root;
 import java.util.List;
 
 @Repository
-public class JPAArticleDao implements ArticleDao {
+public class JPAVideoDao implements VideoDao {
 
     private EntityManager em;
 
@@ -20,24 +20,24 @@ public class JPAArticleDao implements ArticleDao {
     }
 
     @Override
-    public List<Article> findAll() {
-        CriteriaQuery<Article> criteriaQuery = em.getCriteriaBuilder().createQuery(Article.class);
-        Root<Article> root = criteriaQuery.from(Article.class);
+    public List<Video> findAll() {
+        CriteriaQuery<Video> criteriaQuery = em.getCriteriaBuilder().createQuery(Video.class);
+        Root<Video> root = criteriaQuery.from(Video.class);
         return em.createQuery(criteriaQuery).getResultList();
     }
 
     @Override
-    public Article findById(Integer id) {
-        return em.find(Article.class, id);
+    public Video findById(Integer id) {
+        return em.find(Video.class, id);
     }
 
     @Override
-    public Article saveOrUpdate(Article article) {
-        return em.merge(article);
+    public Video saveOrUpdate(Video video) {
+        return em.merge(video);
     }
 
     @Override
     public void delete(Integer id) {
-        em.remove(em.find(Article.class, id));
+        em.remove(em.find(Video.class, id));
     }
 }

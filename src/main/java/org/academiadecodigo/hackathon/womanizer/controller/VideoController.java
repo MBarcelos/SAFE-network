@@ -1,7 +1,7 @@
 package org.academiadecodigo.hackathon.womanizer.controller;
 
-import org.academiadecodigo.hackathon.womanizer.service.ArticleService;
-import org.academiadecodigo.hackathon.womanizer.model.Article;
+import org.academiadecodigo.hackathon.womanizer.model.Video;
+import org.academiadecodigo.hackathon.womanizer.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -14,32 +14,31 @@ import java.util.List;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/api/article")
-public class ArticleController {
+@RequestMapping("/api/video")
+public class VideoController {
 
-    private ArticleService articleService;
+    private VideoService videoService;
 
     @Autowired
-    public void setArticleService(ArticleService articleService) {
-        this.articleService = articleService;
+    public void setVideoService(VideoService videoService) {
+        this.videoService = videoService;
     }
 
     @RequestMapping(method = RequestMethod.GET, path = {"/", ""})
-    public ResponseEntity<List<Article>> listArticles() {
-        return new ResponseEntity<>(articleService.list(), HttpStatus.OK);
+    public ResponseEntity<List<Video>> listVideos() {
+        return new ResponseEntity<>(videoService.list(), HttpStatus.OK);
     }
 
     @RequestMapping(method = RequestMethod.POST, path = {"/", ""})
-    public ResponseEntity<HttpHeaders> addArticle(@RequestBody Article article, UriComponentsBuilder uriComponentsBuilder) {
+    public ResponseEntity<HttpHeaders> addVideo(@RequestBody Video video, UriComponentsBuilder uriComponentsBuilder) {
 
-        Article savedArticle = articleService.save(article);
+        Video savedVideo = videoService.save(video);
 
-        UriComponents uriComponents = uriComponentsBuilder.path("/api/article/" + savedArticle.getId()).build();
+        UriComponents uriComponents = uriComponentsBuilder.path("/api/video/" + savedVideo.getId()).build();
 
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(uriComponents.toUri());
 
         return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
-
 }
