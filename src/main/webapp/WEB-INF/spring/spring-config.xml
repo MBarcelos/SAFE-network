@@ -6,7 +6,7 @@
 
     <!-- load .properties file -->
     <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
-        <property name="locations" value="classpath:todo.properties"/>
+        <property name="locations" value="classpath:womanizer.properties"/>
     </bean>
 
     <!-- spring servlet will handle all requests, including static -->
@@ -16,7 +16,7 @@
     <mvc:annotation-driven/>
 
     <!-- spring will check for components from this package -->
-    <context:component-scan base-package="org.escoladocodigo.vimdiesels.todoapi"/>
+    <context:component-scan base-package="org.academiadecodigo.hackathon.womanizer"/>
 
     <!-- default name is transaction manager -->
     <tx:annotation-driven transaction-manager="transactionManager"/>

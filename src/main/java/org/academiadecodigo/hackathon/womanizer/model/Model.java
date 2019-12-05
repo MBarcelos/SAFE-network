@@ -1,4 +1,4 @@
-package org.escoladocodigo.vimdiesels.todoapi.model;
+package org.academiadecodigo.hackathon.womanizer.model;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;

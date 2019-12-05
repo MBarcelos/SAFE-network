@@ -1,7 +1,7 @@
-package org.escoladocodigo.vimdiesels.todoapi.controller;
+package org.academiadecodigo.hackathon.womanizer.controller;
 
-import org.escoladocodigo.vimdiesels.todoapi.model.Todo;
-import org.escoladocodigo.vimdiesels.todoapi.service.TodoService;
+import org.academiadecodigo.hackathon.womanizer.service.ArticleService;
+import org.academiadecodigo.hackathon.womanizer.model.Article;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -16,27 +16,28 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/todo")
-public class TodoController {
+@RequestMapping("/api/article")
+public class ArticleController {
 
-    private TodoService todoService;
+    private ArticleService articleService;
 
     @Autowired
-    public void setTodoService(TodoService todoService) {
-        this.todoService = todoService;
+    public void setArticleService(ArticleService articleService) {
+        this.articleService = articleService;
     }
 
     @RequestMapping(method = RequestMethod.GET, path = {"/", ""})
-    public ResponseEntity<List<Todo>> listTodos() {
-        return new ResponseEntity<>(todoService.list(), HttpStatus.OK);
+    public ResponseEntity<List<Article>> listArticles() {
+        return new ResponseEntity<>(articleService.list(), HttpStatus.OK);
     }
 
     @RequestMapping(method = RequestMethod.POST, path = {"/", ""})
-    public ResponseEntity<HttpHeaders> addTodo(@RequestBody Todo todo, UriComponentsBuilder uriComponentsBuilder) {
+    public ResponseEntity<HttpHeaders> addArticle(@RequestBody Article article, UriComponentsBuilder uriComponentsBuilder) {
 
-        Todo savedTodo = todoService.save(todo);
+        System.out.println("olá.. " + article.toString());
+        Article savedArticle = articleService.save(article);
 
-        UriComponents uriComponents = uriComponentsBuilder.path("/api/todo/" + savedTodo.getId()).build();
+        UriComponents uriComponents = uriComponentsBuilder.path("/api/article/" + savedArticle.getId()).build();
 
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(uriComponents.toUri());

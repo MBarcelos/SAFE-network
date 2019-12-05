@@ -9,7 +9,7 @@
 5. Create IndexController to test deploy;
 6. Create TodoController;
 7. Create interfaces for Service and Dao and implement CRUD methods;
-8. Implement POST to /api/todo to create a Todo;
+8. Implement POST to /api/article to create a Todo;
 ```
 
 ### WHAT COULD I DO NEXT?

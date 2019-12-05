@@ -1,6 +1,6 @@
-package org.escoladocodigo.vimdiesels.todoapi.dao;
+package org.academiadecodigo.hackathon.womanizer.dao;
 
-import org.escoladocodigo.vimdiesels.todoapi.model.Todo;
+import org.academiadecodigo.hackathon.womanizer.model.Article;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-public class JPATodoDao implements TodoDao {
+public class JPAArticleDao implements ArticleDao {
 
     private EntityManager em;
 
@@ -18,18 +18,18 @@ public class JPATodoDao implements TodoDao {
     }
 
     @Override
-    public List<Todo> findAll() {
-        return em.createQuery("FROM Todo", Todo.class).getResultList();
+    public List<Article> findAll() {
+        return em.createQuery("FROM Article", Article.class).getResultList();
     }
 
     @Override
-    public Todo findById(Integer id) {
+    public Article findById(Integer id) {
         return null;
     }
 
     @Override
-    public Todo saveOrUpdate(Todo todo) {
-        return em.merge(todo);
+    public Article saveOrUpdate(Article article) {
+        return em.merge(article);
     }
 
     @Override

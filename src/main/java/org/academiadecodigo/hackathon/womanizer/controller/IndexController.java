@@ -1,4 +1,4 @@
-package org.escoladocodigo.vimdiesels.todoapi.controller;
+package org.academiadecodigo.hackathon.womanizer.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +14,7 @@ public class IndexController {
     public ResponseEntity<API> api() {
 
         API api = new API();
-        api.setName("TODO with VIMdiesels");
+        api.setName("Womanizer");
         api.setVersion("0.0.1");
 
         return new ResponseEntity<>(api, HttpStatus.OK);
