@@ -1,6 +1,6 @@
 package org.academiadecodigo.hackathon.womanizer.service;
 
-import org.academiadecodigo.hackathon.womanizer.model.Video;
+import org.academiadecodigo.hackathon.womanizer.persistence.model.Video;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package org.academiadecodigo.hackathon.womanizer.service;
 
-import org.academiadecodigo.hackathon.womanizer.dao.VideoDao;
-import org.academiadecodigo.hackathon.womanizer.model.Video;
+import org.academiadecodigo.hackathon.womanizer.persistence.dao.VideoDao;
+import org.academiadecodigo.hackathon.womanizer.persistence.model.Video;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;

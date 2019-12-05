@@ -1,7 +1,7 @@
 package org.academiadecodigo.hackathon.womanizer.service;
 
-import org.academiadecodigo.hackathon.womanizer.dao.ArticleDao;
-import org.academiadecodigo.hackathon.womanizer.model.Article;
+import org.academiadecodigo.hackathon.womanizer.persistence.dao.ArticleDao;
+import org.academiadecodigo.hackathon.womanizer.persistence.model.Article;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

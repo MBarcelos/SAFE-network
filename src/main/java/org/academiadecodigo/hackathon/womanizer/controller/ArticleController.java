@@ -1,7 +1,7 @@
 package org.academiadecodigo.hackathon.womanizer.controller;
 
 import org.academiadecodigo.hackathon.womanizer.service.ArticleService;
-import org.academiadecodigo.hackathon.womanizer.model.Article;
+import org.academiadecodigo.hackathon.womanizer.persistence.model.Article;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

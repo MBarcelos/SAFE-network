@@ -1,4 +1,4 @@
-package org.academiadecodigo.hackathon.womanizer.model;
+package org.academiadecodigo.hackathon.womanizer.persistence.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;

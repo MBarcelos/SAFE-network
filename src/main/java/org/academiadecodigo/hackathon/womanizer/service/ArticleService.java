@@ -1,6 +1,6 @@
 package org.academiadecodigo.hackathon.womanizer.service;
 
-import org.academiadecodigo.hackathon.womanizer.model.Article;
+import org.academiadecodigo.hackathon.womanizer.persistence.model.Article;
 
 import java.util.List;
 

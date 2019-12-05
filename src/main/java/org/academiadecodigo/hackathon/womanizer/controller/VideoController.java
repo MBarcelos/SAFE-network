@@ -1,6 +1,6 @@
 package org.academiadecodigo.hackathon.womanizer.controller;
 
-import org.academiadecodigo.hackathon.womanizer.model.Video;
+import org.academiadecodigo.hackathon.womanizer.persistence.model.Video;
 import org.academiadecodigo.hackathon.womanizer.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
