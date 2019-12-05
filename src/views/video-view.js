@@ -11,11 +11,10 @@ function renderVideo(arr) {
     /* eslint-disable no-param-reassign */
 
     let html = arr.reduce((acc, video) => {
-        console.log(video);
-        return acc + `<iframe width="560" height="315" src="https://www.youtube.com/embed/${video.url}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-    }, '<div>');
-
-    html += '</div>';
+        acc += `<iframe width="100%" src="https://www.youtube.com/embed/${video.url}" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        return acc;
+    }, '');
 
     $('#video-body').append(html);
 }
