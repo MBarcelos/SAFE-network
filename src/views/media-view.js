@@ -1,25 +1,26 @@
-function start() {
-    $('#body').append('<p>hello from search view</p>');
+function start(arrArticle, arrVideo) {
+    renderArticle(arrArticle);
 }
 
 function clear() {
-    $('#body').empty();
+    $('#home-img').empty();
 }
 
-function render(stories) {
+function renderArticle(arr) {
     /* eslint-disable no-param-reassign */
-    let html = stories.reduce((acc, story) => {
-        acc += `<h2>${story.title}</h2>`;
-        acc += `<img src=${story.image} />`;
-        return acc;
-    }, '<div class="card">');
-    html += '</div>';
 
-    $('#body').append($(html));
+        let html = arr.reduce((acc, article) => {
+            acc += `<div class="cell small-4"><h2>${article.title}</h2>`;
+            acc += `<p>${article.content}</p></div>`;
+            return acc;
+        }, '');
+
+        $('#article-body').append(html);
+        
 }
 
 export default {
     start,
-    clear,
-    render
+    clear
 };
+

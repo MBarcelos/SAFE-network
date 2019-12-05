@@ -11,8 +11,8 @@ async function getArticle() {
             resolve(response.map(data => ({
                 id: data.id,
                 title: data.title,
-                text: data.text,
-                img: data.image
+                content: data.content,
+                image: data.image
             })));
         }).fail(reject);
     });

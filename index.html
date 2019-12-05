@@ -1,9 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>safe-women-network</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.min.css" />
+
 
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
@@ -22,46 +30,59 @@
     <script type="module" src="src/index.js" crossorigin="*"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <title>womanizer</title>
+
+
+    <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 
-<body id="body">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-        <a class="navbar-brand" href="#">Womanizer</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#quizz">Take our Quiz</a>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Media
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Articles</a>
-                        <a class="dropdown-item" href="#">Videos</a>
-                    </div>
-                </li>
-
+    <header class="main-header">
+        <div class="logo">
+            SAFE WOMEN network
+        </div>
+        <div class="main-nav">
+            <nav>
+                <a href="#articles">ARTICLES</a>
+                <a href="/#videos">VIDEOS</a>
+                <a href="/#contacts">CONTACTS</a>
+            </nav>
+        </div>
+        <div class="main-donate">
+            <div>
+                <a href="#">MAKE A DONATION</a>
             </div>
         </div>
-    </nav>
+    </header>
+    <div class="main-banner">
+        <img src="img/main-header-bg.jpg" alt="">
+    </div>
+    <div class="main">
+        <section class="make-difference grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell small-7">
+                    <div class="make-difference-info">
+                        <h2>We Are a Global Movement<br>Fighting to Make a Difference</h2>
+                        <p>Lorem Ipsum is simply dummy<br>text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="cell small-5">
+                    <div>
+                        <img src="https://via.placeholder.com/640x320">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-articles grid-container">
+            <div class="grid-x grid-padding-x grid-margin-x" id="article-body">
 
+            </div>
+        </section>
 
-
-    <div id="home-img">
-        <h1 id="home-h1"></h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
 
-
-    <div id="article-body"></div>
-
-    <div id="video-body"></div>
-
-
+    
 </body>
 
 </html>
