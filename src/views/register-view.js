@@ -8,6 +8,11 @@ function clear() {
     $('#register-body').empty();
 }
 
+const api = {
+    dataType: 'json',
+    base: 'http://192.168.2.33:8080/womanizer/api',
+};
+
 function renderForm() {
     /* eslint-disable no-param-reassign */
     
@@ -16,25 +21,32 @@ function renderForm() {
                <div class="grid-x grid-padding-x grid-margin-x">
                    <div class="cell medium-6">
                        <h2>REGISTER</h2>
-                       <form action="">
+                       <form action="${api.base}/therapist" id="edit-form">
                             <label for="name"> Name
-                                <input type="text" name="name">
+                                <input type="text" name="name" id="name">
                             </label>
                             <label for="email"> Email
-                                <input type="email" name="email">
+                                <input type="email" name="email" if="email">
                             </label>               
-                            <label for="phone"> Phone Number
-                                <input type="text" name="phone">
-                            </label>               
+                            <label for="phone"> Phone
+                                <input type="text" name="phone" id="phone">
+                            </label>
+                            <label for="password"> Password
+                                <input type="password" name="password" id="password">
+                            </label>                
                             <label for="location"> Location
-                                <select>
-                                    <option value="husker">Porto</option>
-                                    <option value="starbuck">Fundão</option>
-                                    <option value="hotdog">Coimbra</option>
-                                    <option value="apollo">Lisboa</option>
+                                <select name="location">
+                                    <option value="porto">Porto</option>
+                                    <option value="fundao">Fundão</option>
+                                    <option value="coimbra">Coimbra</option>
+                                    <option value="lisboa">Lisboa</option>
                                 </select>
-                            </label>      
-                            <a href="#" class="read-more">REGISTER</a>         
+                            </label>
+                            <label for="license"> License
+                                <input type="text" name="licenseNumber" id="licenseNumber">
+                            </label>
+                            <button type="submit" class="read-more" style="cursor:pointer" href="#home">REGISTER</button>
+                            <!--a href="#" class="read-more">REGISTER</a-->         
                         </form>
                    </div>
                    <div class="cell large-6">
@@ -46,7 +58,7 @@ function renderForm() {
                              <label for="password"> Password
                                  <input type="password" name="password">
                              </label>
-                             <a href="#" class="read-more"> LOGIN </a>
+                             <button type="submit" class="read-more" style="cursor:pointer" href="#home">LOGIN </button>
                          </form> 
                    </div>
                 </div>
