@@ -1,7 +1,8 @@
 DELETE FROM article;
-INSERT INTO article(ID, CREATIONTIME, UPDATETIME, VERSION, TITLE, CONTENT, IMAGE)
+INSERT INTO article(ID, CREATIONTIME, UPDATETIME, VERSION, TITLE, SUMMARY, CONTENT, IMAGE)
 VALUES (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
         'Domestic violence cases increase in Lisbon',
+        'Portugal''s public prosecutor received 3,487 cases of domestic violence offences in Lisbon district between January and March, according to official figures released on Wednesday...',
         'Portugal''s public prosecutor received 3,487 cases of domestic violence offences in Lisbon district between January and March, according to official figures released on Wednesday.<br>Around 2,700 cases were registered in the same period in 2018.<br>
         The statistics issued by Lisbon''s public prosecutor''s office also show that 1,958 cases were shelved between January and March this year.
         In recent months activists have taken the streets to protest domestic violence, which has already killed 12 women this year.
@@ -12,6 +13,7 @@ VALUES (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.4
         'img1.jpg'),
        (2, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
         'Portugal: Over 500 women murdered in the last 15 years, 28 in 2019',
+        'More than 500 women have been murdered in the last 15 years in the context of family relations in Portugal, and this year alone 28 have died, some shot, others strangled or beaten...',
         'More than 500 women have been murdered in the last 15 years in the context of family relations in Portugal, and this year alone 28 have died, some shot, others strangled or beaten, most of them were victims of domestic violence.<br>
         The data are from the Observatory of Murdered Women (OMA) of the Union of Alternative and Responsive Women (UMAR) and appear in the preliminary report that was presented in Lisbon, covering 1 January to 12 November.<br>
         During this period the OMA counted 28 women murdered in the context of family relationships, two others killed in different contexts, and 27 attempted murders.<br>
@@ -25,6 +27,7 @@ VALUES (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.4
         'img1.jpg'),
        (3, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
         'Two arrests for domestic violence every day as Portugal approaches first “day of mourning”',
+        'With March 7 set for the first national day of mourning for women killed by their partners, RTP news has revealed that since the start of 2019 there have been an average of two...',
         'With March 7 set for the first national day of mourning for women killed by their partners, RTP news has revealed that since the start of 2019 there have been an average of two arrests per day for domestic violence.<br>
         In January and February alone, 10 women lost their lives, and one small child – strangled to death by her own father.<br>
         It has been a truly terrible start to the year which has led prime minister António Costa''s right hand woman Mariana Vieira da Silva, recently promoted to minister of the presidency, to announcing new investment towards the combat of domestic violence.<br>
@@ -35,13 +38,15 @@ VALUES (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.4
         Most of the suspects facing charges are men, and in some cases they have not just been arrested for attacking or threatening partners or former partners, but for menacing their own children.<br>',
         'img1.jpg'),
        (4, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
-        'Portugal: Over 500 women murdered in the last 15 years, 28 in 2019<br>',
+        'Portugal: Over 500 women murdered in the last 15 years, 28 in 2019',
+        'In its first report on the implementation of the Council of Europe Convention on preventing and combating violence against women and domestic violence (“Istanbul Convention”)...',
         'In its first report on the implementation of the Council of Europe Convention on preventing and combating violence against women and domestic violence (“Istanbul Convention”) by Portugal, the Group of Experts on Action against Violence against Women and Domestic Violence (GREVIO) acknowledges the significant commitment of the Portuguese authorities and the progress achieved. However, the report also points out a number of shortcomings and recommends measures to improve the protection of victims, the prosecution of offenders, as well as prevention measures.<br>
         Following the ratification by Portugal of the convention in 2013, the scope of public policies was widened and other forms of violence against women such ask stalking, female genital mutilation (FGM) and forced marriage were criminalised. GREVIO welcomes the efforts in the area of FGM that resulted in three consecutive programmes of action specifically targeting this form of violence, which makes Portugal a pioneer in the area. GREVIO calls on Portugal to develop long-term programmes addressing all forms of violence covered by the convention and to build on progress already achieved.<br>
         GREVIO praises the role the national co-ordination body (CIG) to ensure implementation, monitoring and evaluation of gender-equality policies and gender-based violence. Nevertheless, it finds that the implementation of national action plans on violence against women would benefit from a more robust co-ordination between the governmental agencies. At the operational level, the impact of Law No.112/2009 on domestic violence could be improved, in particular by means of a greater involvement of local authorities.<br>',
         'img1.jpg'),
        (5, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
         'Silent march against domestic violence',
+        'More than 400 people marched in silence in Lisbon on Sunday to show their solidarity with the victims of domestic violence in Portugal as nine women have lost their lives...',
         'More than 400 people marched in silence in Lisbon on Sunday to show their solidarity with the victims of domestic violence in Portugal as nine women have lost their lives already this year.<br>
         "We are united here today in an exercise of pure citizenship. We are trying to mobilise people around a common cause in favour of the victims and against violence”, said Joana Marques, one of the organisers, stressing that the organisation was not connected “with any political party, union or association”.<br>
         The marchers led with a black banner bearing phrases such as “The victim is not to blame, the perpetrator is”, “Violence is the weapon of the mediocre” and “A person who beats someone, attacks all of society”. According to the Portuguese Observatory of Assassinated Women, nine women have been killed in domestic violence since the beginning of the year. A total of 28 women were murdered last year. On Thursday, the government announced it was setting up domestic violence victim support offices in the police criminal investigation departments and bolstering the articulation and cooperation among security forces, magistrates and organisations that work on prevention and fighting domestic violence.<br>',
@@ -51,7 +56,13 @@ VALUES (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.4
 DELETE FROM video;
 INSERT INTO video(ID, CREATIONTIME, UPDATETIME, VERSION, TITLE, YOUTUBEID, THUMBNAIL)
 VALUES (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
-        'Masha e o Urso - Um, Dois, Três!', 'RN0EIYL03Ac', 'thumbnail.png');
+        'Support for victims of domestic violence', 'QCoJeiVAc2o', 'thumbnail.png'),
+       (2, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
+        'My Experience With Domestic Violence', 'Or3UsOp6NHc', 'thumbnail.png'),
+       (3, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
+        'Short Film on Domestic Violence', 'Kv2ldkoJtYE', 'thumbnail.png'),
+       (4, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
+        'Leslie Morgan Steiner: Por que as vítimas de violência doméstica não vão embora', 'V1yW5IsnSjo', 'thumbnail.png');
 
 DELETE FROM QUIZ_RESPONSE;
 INSERT INTO QUIZ_RESPONSE(ID, CREATIONTIME, UPDATETIME, VERSION, RESPONSETEXT, VALUE)
@@ -77,3 +88,15 @@ VALUES (1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.4
 DELETE FROM QUIZ_QUESTION_QUIZ_RESPONSE;
 INSERT INTO QUIZ_QUESTION_QUIZ_RESPONSE (QUIZQUESTION_ID, RESPONSES_ID)
 VALUES (2, 1), (2, 2), (1, 1), (1, 4), (1, 5);
+
+
+DELETE FROM THERAPIST;
+INSERT INTO THERAPIST(ID, CREATIONTIME, UPDATETIME, VERSION, name, phone, email, password, location, licenseNumber) values
+(1, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
+ 'John Doe', '919559911', 'john.doe@mail.com', 'pass', 'Lisboa', '1xx1'),
+(2, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
+ 'Jane Doe', '915579911', 'jane.doe@mail.com', 'pass', 'Porto', '1xx1'),
+(3, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
+ 'John Snow', '919875511', 'john.snow@mail.com', 'pass', 'Fundão', '1xx1'),
+(4, TIMESTAMP '2017-10-10 08:45:56.468', TIMESTAMP '2017-10-10 08:45:56.468', 0,
+ 'Sara Doe', '919879955', 'sara.doe@mail.com', 'pass', 'Lisboa', '1xx1');

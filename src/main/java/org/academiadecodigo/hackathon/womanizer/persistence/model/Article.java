@@ -16,12 +16,24 @@ public class Article extends Model{
 
     @NotNull
     @NotBlank
+    private String summary;
+
+    @NotNull
+    @NotBlank
     @Column(length = 2509)
     private String content;
 
     @NotNull
     @NotBlank
     private String image;
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
 
     public String getTitle() {
         return title;
@@ -51,6 +63,7 @@ public class Article extends Model{
     public String toString() {
         return "Article{" +
                 "title='" + title + '\'' +
+                ", summary='" + summary + '\'' +
                 ", content='" + content + '\'' +
                 ", image='" + image + '\'' +
                 '}';

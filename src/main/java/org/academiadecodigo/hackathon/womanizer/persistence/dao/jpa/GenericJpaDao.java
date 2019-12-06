@@ -13,7 +13,7 @@ public class GenericJpaDao<T extends Model> implements Dao<T> {
 
     protected Class<T> modelType;
 
-    private EntityManager em;
+    protected EntityManager em;
 
     @PersistenceContext
     public void setEm(EntityManager em) {
