@@ -1,4 +1,5 @@
 function start() {
+    $("#contacts-body-112").hide();
     $("#main-section").hide();
     renderArticle();
 }
@@ -14,7 +15,6 @@ function clear() {
 function renderArticle() {
     /* eslint-disable no-param-reassign */
 
-
     let h1 = `ARE YOU A VICTIM<br> OF DOMESTIC VIOLENCE`;
 
 
@@ -29,44 +29,54 @@ function renderArticle() {
                     <div class="cell small-12">
                         <div class="questions-slider">
                             <div class="question-item">
-                                <div class="question">
-                                    Do you watch what you are doing in order to avoid making your partner angry or upset?
-                                </div>
+                                <div class="question">Do you avoid doing something in order to not make the other person angry or upset?
+                                </div> 
                                 <div class="answers flex-container">
                                     <div class="flex-child-grow">
-                                        <a href="#quiz" data-color="red" class="answer">YES</a>
+                                        <a href="#quiz" data-color="red" class="answer">CONSTANTLY</a>
                                     </div>
                                     <div class="flex-child-grow">
-                                        <a href="#quiz" data-color="green" class="answer">NO</a>
+                                        <a href="#quiz" data-color="red" class="answer">SOMETIMES</a>
+                                    </div>
+                                    <div class="flex-child-grow">
+                                        <a href="#quiz" data-color="green" class="answer">RARELY</a>
+                                    </div>
+                                    <div class="flex-child-grow">
+                                        <a href="#quiz" data-color="green" class="answer">NEVER</a>
                                     </div>
                                 </div>
                                 <div class="comment">
                                     <div data-color="green" class="answer-comment">
-                                        <p>RIGHT ANSWER </p>
+                                        <p>It doesn't seem like you might be in a bad environment.</p>
                                     </div>
                                     <div data-color="red" class="answer-comment">
-                                        <p>WRONG ANSWER</p>
+                                        <p>You are probably in a bad environment... search through our website for advices.</p>
                                     </div>
                                 </div>
                             </div>
                                 <div class="question-item">
-                                    <div class="question">
-                                        Do you watch what you are doing in order to avoid making your partner angry or upset?
+                                    <div class="question">Does the other person insist that he must read your messages?
                                     </div>
                                     <div class="answers flex-container">
                                         <div class="flex-child-grow">
-                                            <a href="#quiz" data-color="red" class="answer">YES</a>
+                                            <a href="#quiz" data-color="red" class="answer">CONSTANTLY</a>
                                         </div>
                                         <div class="flex-child-grow">
-                                            <a href="#quiz" data-color="green" class="answer">NO</a>
+                                            <a href="#quiz" data-color="red" class="answer">SOMETIMES</a>
+                                        </div>
+                                        <div class="flex-child-grow">
+                                            <a href="#quiz" data-color="green" class="answer">RARELY</a>
+                                        </div>
+                                        <div class="flex-child-grow">
+                                            <a href="#quiz" data-color="green" class="answer">NEVER</a>
                                         </div>
                                     </div>
                                     <div class="comment">
                                         <div data-color="green" class="answer-comment">
-                                            <p>RIGHT ANSWER </p>
+                                            <p>It doesn't seem like you might be in a bad environment.</p>
                                         </div>
                                         <div data-color="red" class="answer-comment">
-                                            <p>WRONG ANSWER</p>
+                                            <p>You are probably in a bad environment... search through our website for advices.</p>
                                         </div>
                                     </div>
                                 </div>

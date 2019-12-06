@@ -1,4 +1,5 @@
 function start(arrArticle) {
+    $("#contacts-body-112").hide();
     $("#main-section").hide();
     renderArticle(arrArticle);
 }

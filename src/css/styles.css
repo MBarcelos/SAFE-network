@@ -39,3 +39,17 @@ body {     background: #eee;     color: #333;     font-family: 'Source Sans Pro'
   padding: 1rem;
   text-align: center;
 }
+.contacts-flex {
+  width: 100%;
+  margin: auto;
+}
+.contact-left {
+  width: 45%;
+  margin: 1em;
+}
+.contact-right {
+  width: 45%;
+  margin: -7em;
+  float: right;
+  overflow: hidden;
+}

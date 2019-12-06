@@ -30,18 +30,13 @@ function start() {
             return;
         }
 
-        controllers[controllerName].start();
-
-        
+        controllers[controllerName].start();  
     };
 
     if (!window.location.hash) {
         window.location.hash = `#${defaultRoute}`;
     }
 
-    if (window.onhashchange = window.location) {
-        controllers[controllerName].start();
-    }
 }
 
 export default {

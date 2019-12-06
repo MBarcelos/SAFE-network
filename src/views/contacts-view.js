@@ -1,6 +1,7 @@
 function start(arrContacts) {
     $("#main-section").hide();
-    $('.footer').css({"position":"absolute"});
+    $("#contacts-body-112").show();
+    $('.footer').css({ "position": "absolute" });
     renderContacts(arrContacts);
 }
 
@@ -10,7 +11,7 @@ function clear() {
     $('#register-body').empty();
     $('#contacts-body').empty();
     $('#quiz-body').empty();
-    $('.footer').css({"position":"relative"});
+    $('.footer').css({ "position": "relative" });
 }
 
 function renderContacts(arr) {
@@ -22,7 +23,14 @@ function renderContacts(arr) {
         return acc;
     }, '');
 
+
+    let contactRight = ` 
+        <h1>In Case Of an Emergency</h1>
+        <h2>call your cousin 112</h2> 
+         `;
+
     $('#contacts-body').append(html);
+    $('#contacts-body-112').append(contactRight);
 
 }
 

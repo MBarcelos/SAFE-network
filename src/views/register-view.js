@@ -1,4 +1,5 @@
 function start() {
+    $("#contacts-body-112").hide();
     $("#main-section").hide();
     renderForm();
 }
