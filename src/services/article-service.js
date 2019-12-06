@@ -12,7 +12,8 @@ async function getArticle() {
                 id: data.id,
                 title: data.title,
                 content: data.content,
-                image: data.image
+                image: data.image,
+                summary: data.summary
             })));
         }).fail(reject);
     });
