@@ -2,6 +2,7 @@
 import controllers from './controllers/main.js';
 
 const defaultRoute = 'home';
+let firstFlag = false;
 
 function unloadController(url) {
     const controllerHash = url.split('#')[1];
@@ -16,6 +17,9 @@ function unloadController(url) {
 }
 
 function start() {
+
+
+
     window.onhashchange = window.onhashchange || function(event) {
         if (event.newURL !== event.oldURL) {
             unloadController(event.oldURL);

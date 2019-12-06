@@ -51,7 +51,7 @@ function renderForm() {
                             <label for="license"> License
                                 <input type="text" name="licenseNumber" id="licenseNumber">
                             </label>
-                            <button type="submit" class="read-more" style="cursor:pointer" href="#home">REGISTER</button>
+                            <button type="submit" class="read-more" style="cursor:pointer" onclick="goHome()">REGISTER</button>
                             <!--a href="#" class="read-more">REGISTER</a-->         
                         </form>
                    </div>
@@ -64,11 +64,16 @@ function renderForm() {
                              <label for="password"> Password
                                  <input type="password" name="password">
                              </label>
-                             <button type="submit" class="read-more" style="cursor:pointer" href="#home">LOGIN </button>
+                             <button type="submit" class="read-more" style="cursor:pointer" onclick="goHome()">LOGIN </button>
                          </form> 
-                   </div>
+                   </div> 
                 </div>
            </div>
+           <script>
+           function goHome() {
+               window.location.hash = 'home';
+           }
+           </script>
      `
 
     $("#register-body").append(html);

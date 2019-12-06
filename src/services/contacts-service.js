@@ -10,7 +10,9 @@ async function getContacts() {
             console.log(response);
             resolve(response.map(data => ({
                 name: data.name,
-                email: data.email
+                email: data.email,
+                phone: data.phone,
+                location: data.location
             })));
         }).fail(reject);
     });
