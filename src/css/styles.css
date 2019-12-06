@@ -47,7 +47,34 @@ body {
 
 }
 .main-banner {
+    background: url("../img/main-header-bg.jpg");
     margin-bottom: 90px;
+    padding: 90px 30px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-banner-overlay {
+    max-width: 600px;
+    text-align: center;
+}
+.home-banner-overlay h1 {
+    color: #fff;
+    font-family: Barlow, sans-serif;
+    font-size: 46px;
+    margin-bottom: 30px;
+}
+.find-out-now, .find-out-now:hover {
+    font-size: 20px;
+    background: #7B4DD3;
+    color: #FFF;
+    font-family: Barlow;
+    font-weight: 600;
+    padding: 15px 45px;
+    letter-spacing: 2px;
+    display: inline-block;
 }
 .home-articles {
     margin-top: 90px;
@@ -55,8 +82,12 @@ body {
 .make-difference {
     margin-top: 90px;
 }
+.make-difference-page {
+    max-width: 750px;
+    margin: 90px auto 0;
+}
 .make-difference-info {
-    background: #7B4DD3;
+    background: #F3902A;
     padding: 30px;
     color: #fff;
 }
@@ -74,7 +105,36 @@ body {
     font-weight: 600;
     margin-top: 5px;
 }
-.video {
-    width: 100% !important;
-    display: block !important;
+.page-header {
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+}
+#quiz-form fieldset {
+    margin-bottom: 30px;
+}
+#quiz-form legend {
+    font-weight: 700;
+}
+#quiz-form label {
+    font-size: 16px;
+}
+
+.main-footer {
+    background: #333;
+    color: #fff;
+    margin-top: 120px;
+    padding: 30px
+}
+
+.make-difference-learn-more, .make-difference-learn-more:hover {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 15px;
+}
+.form-score {
+    font-size: 42px;
+
 }

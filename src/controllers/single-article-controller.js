@@ -7,7 +7,7 @@ export default {
         const articles = await articleService.getArticle();
         articleView.start(articles);
     },
-    hash: 'articles',
+    hash: 'article/${id}',
     unload() {
         articleView.clear();
     }

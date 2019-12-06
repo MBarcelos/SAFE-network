@@ -1,10 +1,11 @@
 function start(arrArticle) {
     renderArticle(arrArticle);
-
 }
 
 function clear() {
     $('#article-body').empty();
+    $('#video-body').empty();
+    $('#register-body').empty();
 }
 
 function renderArticle(arr) {
