@@ -1,4 +1,5 @@
 function start(arrVideo) {
+    clear();
     $("#contacts-body-112").hide();
     $("#main-section").hide();
     renderVideo(arrVideo);

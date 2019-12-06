@@ -20,7 +20,7 @@ function renderArticle(arr) {
     for (let i = 0; i <= 2; i++) {
         html += `<div class="cell small-4"><h2>${arr[i].title}</h2>`;
         html += `<p>${arr[i].summary}</p>`;
-        html += `<a href="article/${arr[i].id}">Read more...</a></div>`;
+        html += `</div>`;
     }
 
     $('#article-body').append(html);

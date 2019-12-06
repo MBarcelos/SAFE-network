@@ -1,4 +1,5 @@
 function start() {
+    clear();
     $("#contacts-body-112").hide();
     $("#main-section").hide();
     renderForm();
@@ -32,10 +33,10 @@ function renderForm() {
                                 <input type="text" name="name" id="name">
                             </label>
                             <label for="email"> Email
-                                <input type="email" name="email" if="email">
+                                <input type="email" name="email" id="email">
                             </label>               
                             <label for="phone"> Phone
-                                <input type="text" name="phone" id="phone">
+                                <input type="number" name="phone" id="phone">
                             </label>
                             <label for="password"> Password
                                 <input type="password" name="password" id="password">
@@ -71,7 +72,7 @@ function renderForm() {
            </div>
            <script>
            function goHome() {
-               window.location.hash = 'home';
+               //window.location.hash = 'home';
            }
            </script>
      `

@@ -1,4 +1,5 @@
 function start(arrArticle) {
+    clear();
     $("#contacts-body-112").hide();
     $("#main-section").hide();
     renderArticle(arrArticle);
@@ -18,7 +19,7 @@ function renderArticle(arr) {
     let html = arr.reduce((acc, article) => {
         acc += `<div class="cell small-4"><h2>${article.title}</h2>`;
         acc += `<p>${article.summary}</p>`;
-        acc += `<a href="/${article.id}">Read more...</a></div>`;
+        acc += `</div>`;
         return acc;
     }, '');
 

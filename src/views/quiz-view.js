@@ -73,10 +73,10 @@ function renderArticle() {
                                     </div>
                                     <div class="comment">
                                         <div data-color="green" class="answer-comment">
-                                            <p>It doesn't seem like you might be in a bad environment.</p>
+                                            <p>It doesn't seem like you are in a bad environment.</p>
                                         </div>
                                         <div data-color="red" class="answer-comment">
-                                            <p>You are probably in a bad environment... search through our website for advices.</p>
+                                            <p>You are probably in a bad environment. This is not a healthy behaviour. If you feel you need help, feel free to contact one of our counselors <a href="#contacts">here</a>.</p>
                                         </div>
                                     </div>
                                 </div>

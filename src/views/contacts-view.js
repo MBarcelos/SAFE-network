@@ -1,4 +1,5 @@
 function start(arrContacts) {
+    clear();
     $("#main-section").hide();
     $("#contacts-body-112").show();
     $('.footer').css({ "position": "relative" });

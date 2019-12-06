@@ -26,6 +26,7 @@ console.log(json);
         //dataType: 'text json',
         data: json,
         success: function(data) {
+            window.location.hash = 'home';
             console.log('ok');
         },
         error: function(err) {
