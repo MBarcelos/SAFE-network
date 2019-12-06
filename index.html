@@ -17,13 +17,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="/src/css/styles.css">
+    <script src="/src/main.js"></script>
 </head>
 
 <body>
-
+ 
     <header class="main-header">
         <div class="logo"><a href="#home">
-                SAFE WOMEN network</a>
+                SAFE network</a>
         </div>
         <div class="main-nav">
             <nav>
@@ -38,9 +39,14 @@
             </div>
         </div>
     </header>
+
     <div class="main-banner">
-        <img src="images/main-header-bg.jpg" alt="">
+        <div class="home-banner-overlay">
+            <h1 id="banner-title">IS THIS DOMESTIC VIOLENCE?</h1>
+            <a href="#quiz" class="find-out-now">FIND OUT NOW</a>
+        </div>
     </div>
+
     <div class="main">
         <section class="make-difference grid-container" id="main-section">
             <div class="grid-x grid-margin-x">
@@ -63,7 +69,11 @@
 
             <div class="grid-x grid-padding-x grid-margin-x" id="video-body"></div>
 
-            <div class="grid-x grid-padding-x grid-margin-x" id="register-body"></div>
+            <div class="main" id="register-body"></div>
+
+            <div class="grid-x grid-padding-x grid-margin-x" id="contacts-body"></div>
+
+            <div class="main" id="quiz-body"></div>
 
         </section>
 
@@ -74,20 +84,26 @@
     </div>
 
 
+
+    
+    
+
 </body>
 
 
 
 
 
-<footer class="main-footer">
-        <div class="grid-container">
-            <div class="grid-x grid-padding-x">
-                <div class="cell small-6"></div>
-                <div class="cell small-6 text-right">Privacy Policy | Terms and Conditions</div>
-            </div>
+<footer class="main-footer footer">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-6"></div>
+            <div class="cell small-6 text-right">Privacy Policy | Terms and Conditions</div>
         </div>
-    </footer>
-    
+    </div>
+</footer>
+
+
+
 
 </html>

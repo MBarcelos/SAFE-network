@@ -1,10 +1,15 @@
 function start(arrArticle) {
+    clear();
+    $("#main-section").show();
     renderArticle(arrArticle);
 }
 
 function clear() {
     $('#article-body').empty();
+    $('#video-body').empty();
     $('#register-body').empty();
+    $('#contacts-body').empty();
+    $('#quiz-body').empty();
 }
 
 function renderArticle(arr) {

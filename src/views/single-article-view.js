@@ -1,4 +1,5 @@
 function start(arrArticle) {
+    $("#main-section").hide();
     renderArticle(arrArticle);
 
 }
@@ -6,6 +7,7 @@ function start(arrArticle) {
 function clear() {
     $('#article-body').empty();
     $('#register-body').empty();
+    
 }
 
 function renderArticle(arr) {

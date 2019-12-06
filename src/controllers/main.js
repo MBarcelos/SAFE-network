@@ -3,6 +3,8 @@ import articleController from './article-controller.js';
 import videoController from './video-controller.js';
 import singleArticle from './single-article-controller.js';
 import registerController from './register-controller.js';
+import contactsController from './contacts-controller.js';
+import quizController from './quiz-controller.js';
 
 
 export default {
@@ -10,5 +12,7 @@ export default {
     articleController,
     videoController,
     singleArticle,
-    registerController
+    registerController,
+    contactsController,
+    quizController
 };

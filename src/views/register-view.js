@@ -1,4 +1,5 @@
 function start() {
+    $("#main-section").hide();
     renderForm();
 }
 
@@ -6,6 +7,8 @@ function clear() {
     $('#article-body').empty();
     $('#video-body').empty();
     $('#register-body').empty();
+    $('#contacts-body').empty();
+    $('#quiz-body').empty();
 }
 
 const api = {
@@ -15,8 +18,10 @@ const api = {
 
 function renderForm() {
     /* eslint-disable no-param-reassign */
-    
-    let html = ` <div class="main">
+
+
+
+    let html = ` 
            <div class="grid-container">
                <div class="grid-x grid-padding-x grid-margin-x">
                    <div class="cell medium-6">
@@ -63,7 +68,7 @@ function renderForm() {
                    </div>
                 </div>
            </div>
-    </div> `
+     `
 
     $("#register-body").append(html);
 
