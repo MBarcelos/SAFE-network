@@ -5,7 +5,7 @@ This was the project we developed for our Hackathon, the final event of our prog
 ## The Idea
 
 We were given a theme and song to extrapolate from. The theme was 'Push and Pop' and the song was 'Womanizer' by Britney Spears. We took the songs main message about guys who cheat on their partners and felt that we could talk about a really sensitive and powerful subject: abuse. 
-SAFE stands for Strong And Fearless Equality and it is a network for everyone. People who are in danger, people who think they might be in danger, people who wanna know if a friend of theirs is in danger. At SAFE you can talk to experts and receive help depending on your situation. You can also register as a therapist with your license and be part of the many therapits that are involved in the network.
+SAFE stands for Strong And Fearless Equality and it is a network for everyone. People who are in danger, people who think they might be in danger, people who wanna know if a friend of theirs is in danger. At SAFE you can talk to experts and receive help depending on your situation. You can also register as a therapist with your license and be part of the many therapists that are involved in the network.
 
 ## The Development
 
@@ -13,7 +13,7 @@ Every creator that was involved in this project met 1 day before we were given t
 
 ## Tech && Methodologies
 
-Java, Javascript, Mac OS, Spring MVC, Javascript MVC, Hibernate, MySQL, Tomcat, Maven, Git, Scrum, HTML5, CSS3, Thymeleaf, IntelliJ, Visual Studio Code.
+Java, Javascript, Mac OS, Spring MVC, Javascript MVC, Hibernate, MySQL, Tomcat, Maven, Git, Scrum, HTML5, CSS3, IntelliJ, Visual Studio Code.
 
 ## How to use
 
@@ -24,7 +24,7 @@ In order to connect to our application, use maven $mvn tomcat7:deploy to deploy 
 * **André Martins** - [andre-base](https://github.com/andre-base)
 * **Bernardo Telo** - [Chickenwithoutwing](https://github.com/Chickenwithoutwing)
 * **João Leandro** - [joaoarthurcl](https://github.com/joaoarthurcl)
-* **Mariana Barcelos** - [rvbrd](https://github.com/MBarcelos)
+* **Mariana Barcelos** - [MBarcelos](https://github.com/MBarcelos)
 * **Ruben Brandão** - [rvbrd](https://github.com/rvbrd)
 
 
