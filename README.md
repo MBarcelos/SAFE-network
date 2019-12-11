@@ -10,11 +10,14 @@ The feature that differenciates our application, is the quiz we provide. The ide
 
 ## The Development
 
-Every creator that was involved in this project met 1 day before we were given the theme to our ptoject. We managed to have a great communication and to work as a great team. First, all of us talked about the strengths and what we were going to be comfortable working on which resulted in a very good workflow for both backend and frontend developers.
+Every creator that was involved in this project met 1 day before we were given the theme to our ptoject. We managed to have a great communication and to work as a great team. Firstly, all of us talked about our strengths and what we were going to be comfortable working on which resulted in a very good workflow for both backend and frontend developers.
+
+## My Role
+I was in charge of the back end. I developed a REST API from scratch, that we consumed in our website. We used Maven to deal with dependencies and deployment. The project is ready to use mySQL database, however, the project was developed using H2 database. To map the database schema, we used Hibernate with Spring. To test the API requests we used Postman.
 
 ## Tech && Methodologies
 
-Java, Javascript, Mac OS, Spring, Spring MVC, Javascript MVC, Hibernate, MySQL, Tomcat, Maven, Git, Scrum, HTML5, CSS3, IntelliJ, Visual Studio Code.
+Java, Javascript, Mac OS, Spring, Spring MVC, Javascript MVC, Hibernate, MySQL, H2, Tomcat, Maven, Git, Scrum, HTML5, CSS3, Postman, IntelliJ, Visual Studio Code.
 
 ## How to use
 
